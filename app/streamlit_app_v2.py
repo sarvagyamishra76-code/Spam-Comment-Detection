@@ -4,7 +4,18 @@ from pathlib import Path
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(page_title="Spam Classifier", page_icon="📧")
+st.markdown("""
+<style>
+.stApp {
+    background-color: #EAF4FF;
+}
 
+h1 {
+    color: #1565C0;
+    text-align: center;
+}
+</style>
+""", unsafe_allow_html=True)
 # --- FILE PATH SETUP ---
 # Using Pathlib ensures the app can find the files regardless of the environment
 BASE_DIR = Path(__file__).parent
